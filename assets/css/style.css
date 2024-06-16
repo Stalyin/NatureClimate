@@ -1553,6 +1553,9 @@ span {
   text-align: start;
 }
 
+.slider-title {
+  font-size: 18px;
+}
 .social-list {
   display: none;}
 }
@@ -1577,6 +1580,7 @@ span {
 .footer-bottom {
   display: none;
 }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -1611,11 +1615,13 @@ span {
   width: 100%;
 }
 
-.slider-title {
-  font-size: 18px;
-}
+
 
 .slider-banner .img-holder {
   margin-top: 55rem;
+}
+
+.modal-img {
+  width: 200px;
 }
 }
