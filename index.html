@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Cambios Climáticos</title>
+  <meta name="title" content="Wren - Perosonal Blog Website">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+       Yari Cachiguango
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="119" height="37" alt="Wren logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#teoria" class="navbar-link hover-1" data-nav-toggler>Teoria</a>
+          </li>
+
+          <li>
+            <a href="#medidas" class="navbar-link hover-1" data-nav-toggler>Medidas</a>
+          </li>
+
+          <li>
+            <a href="#est" class="navbar-link hover-1" data-nav-toggler>Estadisticas</a>
+          </li>
+
+          <li>
+            <a href="#obj" class="navbar-link hover-1" data-nav-toggler>Objetivos</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+        <p class="copyright-text">
+          Copyright 2024 © YariC. - Personal Blog.
+          Developed by StalyinDev
+        </p>
+
+      </nav>
+
+      <a href="#contact"  class="btn btn-primary">Escribeme</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Probabilidad y estadística</p>
+
+            <h1 class="headline headline-1 section-title">
+               <span class="span">Cambios Clímaticos</span>
+            </h1>
+
+            <p class="hero-text">
+              Bienvenidos a nuestra página web sobre estudios estadísticos. 
+              Aquí abordamos problemas, recogemos y organizamos datos, 
+              los analizamos para identificar patrones y tendencias, e 
+              interpretamos los resultados para responder preguntas clave. 
+            </p>
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/headerimg.png" width="327" height="490" alt="Wren Clark" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+  <!-- 
+        - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+          <ul class="grid-list">
+            <li>
+              <button class="card tag-btn" onclick="openModal('modal1')">
+                <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="Travel">
+                <p class="btn-text">Recopilación de Datos</p>
+              </button>
+            </li>
+            <li>
+              <button class="card tag-btn" onclick="openModal('modal2')">
+                <img src="./assets/images/tag11.png" width="32" height="32" loading="lazy" alt="Nature">
+                <p class="btn-text">Análisis de Datos</p>
+              </button>
+            </li>
+            <li>
+              <button class="card tag-btn" onclick="openModal('modal3')">
+                <img src="./assets/images/tag12.png" width="32" height="32" loading="lazy" alt="Business">
+                <p class="btn-text">Objetivo</p>
+              </button>
+            </li>
+          </ul>
+          <p class="section-text2">Presiona click en cada botón para desplegar la información</p>
+        </div>
+      </section>
+    
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h2>Recopilación de Datos</h2>
+          <p>Reunir temperaturas, precipitaciones, viento y humedad de estaciones meteorológicas, satélites y sensores.</p>
+        </div>
+      </div>
+    
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h2>Análisis de Datos</h2>
+          <p>Realizar cálculos estadísticos para identificar patrones y tendencias, como el análisis de regresión para cambios en temperaturas.</p>
+        </div>
+      </div>
+    
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h2>Objetivo</h2>
+          <p>Realizar un análisis estadístico del clima en Ambato para identificar patrones y tendencias. Esto ayudará a comprender los cambios climáticos y su impacto, correlacionando con factores ambientales y socioeconómicos para ofrecer una visión integral del clima y su influencia.</p>
+        </div>
+      </div>
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="teoria" aria-labelledby="topic-label">
+        <div class="container">
+          <div class="card topic-card">
+            <div class="card-content">
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                Conceptos Básicos
+              </h2>
+              <p class="card-text">
+                Nuestro objetivo es revelar los secretos ocultos en los números y ofrecer una comprensión más profunda del mundo. ¡Únete a esta aventura estadística!
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+    
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </div>
+    
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+                <li class="slider-item">
+                  <div class="slider-card" onclick="openTopicModal('topicModal1')">
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/tab1.jpg" width="507" height="618" loading="lazy" alt="Sport" class="img-cover">
+                    </figure>
+                    <div class="slider-content">
+                      <span class="slider-title">Tabla de Frecuencias</span>
+                      <p class="slider-subtitle">Click para mas Informacion</p>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="slider-item">
+                  <div class="slider-card" onclick="openTopicModal('topicModal2')">
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/tab2.jpg" width="507" height="618" loading="lazy" alt="Travel" class="img-cover">
+                    </figure>
+                    <div class="slider-content">
+                      <span class="slider-title">Frecuencias Absolutas</span>
+                      <p class="slider-subtitle">Click para mas Informacion</p>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="slider-item">
+                  <div class="slider-card" onclick="openTopicModal('topicModal3')">
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/tab3.png" width="507" height="618" loading="lazy" alt="Lifestyle" class="img-cover">
+                    </figure>
+                    <div class="slider-content">
+                      <span class="slider-title">Frecuencias Relativas</span>
+                      <p class="slider-subtitle">Click para mas Informacion</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Modal para Conceptos Básicos 1 -->
+      <div id="topicModal1" class="modal">
+        
+        <div class="modal-content">
+          <span class="close" onclick="closeTopicModal('topicModal1')">&times;</span>
+          <h2>Tabla de Frecuencias</h2>
+          <p>En el campo de la estadística, la tabla de frecuencias es una herramienta estadística que muestra cuántas veces aparece cada valor en un conjunto de datos, permitiendo visualizar la distribución de las características de las variables estudiadas.</p>
+          <img src="./assets/images/tab1.png" alt="" class="modal-img">
+        </div>
+      </div>
+    
+      <!-- Modal para Conceptos Básicos 2 -->
+      <div id="topicModal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeTopicModal('topicModal2')">&times;</span>
+          <h2>Frecuencias Absolutas</h2>
+          <p>Las frecuencias absolutas son números que indican cuántas veces aparece una categoría 
+             específica de una variable en un conjunto de datos.
+          </p>
+        </div>
+      </div>
+    
+      <!-- Modal para Conceptos Básicos 3 -->
+      <div id="topicModal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeTopicModal('topicModal3')">&times;</span>
+          <h2>Frecuencias Relativas</h2>
+          <p>Las frecuencias relativas representan la proporción de veces 
+            que una categoría específica aparece en relación con el total 
+            de casos en un conjunto de datos. 
+            Estas frecuencias se expresan generalmente como porcentajes.
+          </p>
+        </div>
+      </div>
+    
+<!-- newsection for table -->
+
+
+<!-- faq section -->
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="medidas">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Medidas de Posicion</span>
+          </h2>
+
+          <p class="section-text">
+            Las Medidas de Posición son herramientas estadísticas que resumen un conjunto de datos en un valor 
+            representativo o dividen la distribución de los datos en segmentos iguales.
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/cuartiles.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Cuartil
+                      </a>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Un cuartil es una medida estadística que divide una 
+                      distribución de datos en cuatro partes iguales.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/quintil.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Quintil</a>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Un quintil divide la distribución de datos en 
+                      cinco partes iguales, generando cuatro segmentos de igual tamaño.
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/deciles.webp" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Decil</a>
+
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      El decil divide los datos en diez partes 
+                      iguales, donde D5 (quinto quintil) representa la mediana.
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/percentil.webp" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Percentil</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      El percentil divide la distribución en cien partes iguales, generando 
+                      99 percentiles que se corresponden con los deciles y cuartiles.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/formulas.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Formulas</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Para mas informacion sobre Formulas y las medidas 
+                      de posicion haz click en ver mas y te dirigira a una web diferente
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+          
+
+            <h2 class="headline-2 section-title" style="color: white; margin-left: auto; margin-right: auto;">
+              <span class="span span2" >Medidas de dispersion y centralizacion</span>
+            </h2>
+            <div id="content" class="hidden">
+
+              <ul class="feature-list">
+            
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/rango.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Rango o Amplitud</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Es la diferencia entre el valor más alto
+                       y el más bajo en un conjunto de datos.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/estandar.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Desviacion Estandar</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Indica cuánto se alejan los valores en un conjunto de datos de 
+                      la media (el valor promedio). Siempre es mayor o igual que cero.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/var.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Coeficiente de Variacion</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Es una medida estadística que proporciona 
+                      información sobre la dispersión relativa de un conjunto de datos.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/med.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Desviacion Media</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Se usa para entender cuánto se desvían los datos de 
+                      un conjunto del promedio.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/varianza.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Varianza</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Representa la variabilidad de un conjunto 
+                      de datos en relación a su media.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            
+
+            <p style=" margin-left: auto; margin-right: auto; font-size: 18px; text-align: center;">Medidas de centralización
+              Estas son indicadores que señalan los valores más característicos dentro de un conjunto de datos.</p>
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/media.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Media aritmetica
+                      </a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Este es un tipo de promedio que asigna 
+                      igual peso a todos los valores en el conjunto.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/mediana.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Mediana</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Esta medida divide un conjunto de 
+                      valores en dos segmentos iguales
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/moda.jpg" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">Moda</a>
+                    </div>
+
+                
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Es el valor que se presenta con mayor 
+                      frecuencia dentro de un conjunto de datos.
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+          </div>
+            
+          </ul>
+
+          <a id="toggleButton" href="#" class="btn btn-secondary">
+            <p class="span" style="font-size: 20px;">Leer más</p>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+
+
+
+    
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="est" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Graficos Estadisticos</span>
+             
+            </h2>
+            <p style="margin-bottom: 1rem;">Un gráfico estadístico es una representación visual de una serie de datos estadísticos.
+            </p>
+            <ul class="grid-list">
+
+              
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/barras.png" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2"> Graficos de Barras
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Los gráficos de barras resumen y comparan los datos categóricos mediante longitudes de barras proporcionales para representar valores. Los gráficos de barras se componen de un eje x y un eje y. 
+                      El eje x representa categorías discretas que corresponden a una o varias barras. 
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/histo.png" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Histograma
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Los histogramas ayudan a ver el centro, la extensión y la forma de un conjunto de datos. También se pueden usar como herramienta visual para comprobar la normalidad. Los histogramas 
+                      son una de las siete herramientas básicas de control de calidad estadístico.
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/pict.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Pictograma
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Un pictograma es un símbolo gráfico que transmite información o datos mediante una representación clara y simplificada. Pueden ser un valioso complemento de presentaciones e 
+                      infografías, ya que ayudan a transmitir información de forma visual y más rápida.  
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </li>
+            
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/cir.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Circulas o de Pastel
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      También conocida como gráfica circular, las gráficas de pastel son diagramas redondos, parecidos a un pastel. Cada una de las “porciones” representa una categoría de información que forma parte de un todo. En conjunto, todo el pastel representa 
+                      el 100%. El tamaño de cada “porción” es relativo a su relación con el todo.  
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/poli.png" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Poligono de Frecuencias
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Un polígono de frecuencias es un gráfico usado en estadística para mostrar la frecuencia con la que cambia 
+                      una variable o categoría. Para crear uno necesitas un histograma de datos.  
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Medidas de Forma</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <div class="card-content">
+
+                      <div class="warpper">
+                        <p class="card-subtitle" style="margin-top: -5rem;">El objetivo de estas medidas es 
+                          determinar si las probabilidades 
+                          se distribuyen de manera equitativa alrededor de la media y 
+                          si dicha distribución muestra un comportamiento parecido a la
+                           distribución de probabilidad más relevante, conocida como ‘distribución Normal’.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Coeficiente de asimetría
+                        </a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">Se refiere a cómo la curva formada por los valores de una serie es simétrica a ambos lados de un valor central, que es la media aritmética.</p>
+                        <img src="./assets/images/asyc.jpg" alt="" style=" margin-top: 1rem;
+                          ">
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Coeficiente de apuntamiento
+                        </a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">Es una medida estadística que indica el grado de concentración 
+                          de los valores de una variable alrededor de su media.</p>
+                        <img src="./assets/images/coef.jpg" alt="" style="margin-top: 1rem; width: 400px; height: 200px;">
+                       </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Objetivo de Analisis</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      Analizar las características meteorológicas de una semana específica para comprender los patrones y tendencias en humedad, presión, 
+                      condiciones climáticas, velocidad del viento, punto de rocío y temperatura.
+                    </blockquote>
+
+                    <div class="profile-card">
+
+                      <div>
+                        <p class="card-title">Objetivos Especificos</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      Para analizar las características meteorológicas de una semana específica:
+
+Identificar días con alta humedad respecto a la media semanal.
+Evaluar días con presión atmosférica por encima de la mediana semanal.
+Determinar la condición climática menos común de la semana.
+Analizar la distribución de la velocidad del viento.
+Categorizar la frecuencia del viento más común.
+Examinar la distribución del punto de rocío.
+Comparar la dispersión de variables como temperatura, presión y velocidad del viento.
+Calcular medidas descriptivas (media, mediana, moda, rango, desviación estándar) de humedad y temperatura.
+Investigar la posible correlación entre temperatura y presión.
+                    </blockquote>
+
+                    <div class="profile-card">
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <section class="tareas" id="obj">
+    <div class="card aside-card insta-card">
+      <p class="card-text" style="font-size: 25px; text-align: center;">
+        Objetivos Aplicados
+      </p>
+      <ul class="insta-list">
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a1.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a1.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a2.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a2.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a3.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a3.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a4.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a4.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a5.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a5.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a6.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a6.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a7.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a7.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a8.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a8.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a9.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a9.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a10.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a10.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a11.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a11.jpg')">
+          </a>
+        </li>
+        <li>
+          <a href="#nd" class="insta-post img-holder" style="--width: 276; --height: 277;">
+            <img src="./assets/images/a12.jpg" width="276" height="277" loading="lazy" alt="insta post" class="img-cover" onclick="openImage('./assets/images/a12.jpg')">
+          </a>
+        </li>
+        <!-- Repite esto para cada imagen -->
+      </ul>
+      <button id="openModalBtn" class="tareasbtn" style="background-color: rgb(9, 168, 242); color: white; 
+      padding: 1rem; margin-top: 2rem; border-radius: 12px; margin-left: auto; margin-right: auto;">Abrir Preguntas</button>
+  
+    </div>
+  </section>
+  
+  <div class="overlay" onclick="closeImage()">
+    <div class="image-container">
+      <img id="expandedImage" src="" alt="Imagen ampliada">
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Información de la Semana</h2>
+      <h3>1. ¿Cuáles son los días que presentan una humedad superior a la humedad media de la semana?</h3>
+      <p>Humedad Superior a la Media: Los días con humedad superior a la media de la semana (80%) son:</p>
+      <ul>
+        <li>6 de mayo: 79%</li>
+        <li>7 de mayo: 79%</li>
+        <li>8 de mayo: 76%</li>
+        <li>9 de mayo: 93%</li>
+        <li>10 de mayo: 89%</li>
+      </ul>
+      <h3>2. ¿Cuáles son los días con presión superior a la mediana de la presión de esa semana?</h3>
+      <p>Presión Superior a la Mediana: La mediana de la presión de la semana es de 30.35 pulgadas. Los días con presión superior a la mediana son:</p>
+      <ul>
+        <li>6 de mayo: 30.45 pulgadas</li>
+        <li>9 de mayo: 30.47 pulgadas</li>
+        <li>10 de mayo: 30.47 pulgadas</li>
+      </ul>
+      <h3>3. ¿Cuál de las categorías de la variable Condición es la menos frecuente, en esa semana?</h3>
+      <p>La condición de lluvia es la menos frecuente en la semana.</p>
+      <h3>4. ¿Cómo se distribuye la velocidad del viento en esa semana?</h3>
+      <p>Distribución de la Velocidad del Viento: La velocidad del viento varía a lo largo de la semana, con valores que van desde 0.0 mph hasta 8.9 mph.</p>
+      <h3>5. Si se considera las categorías de la variable Viento, ¿cuál categoría es la más frecuente en esa semana?</h3>
+      <p>Considerando la categoría del viento, esta llega a ser la más frecuente en la semana.</p>
+      <h3>6. ¿Cómo se distribuye la variable Punto de rocío?</h3>
+      <p>Distribución del Punto de Rocío: El punto de rocío varía a lo largo de la semana, con valores que van desde 40.1°F hasta 52.9°F.</p>
+      <h3>7. ¿Cuál de las variables: Temperatura, Presión y Velocidad del viento, presenta menor dispersión?</h3>
+      <p>Menor Dispersión: Basado en los rangos observados, la Presión parece tener la menor dispersión, con valores que varían ligeramente alrededor de 30.35 a 30.47 pulgadas.</p>
+      <h3>8. ¿Cuáles son las medidas descriptivas de la variable Humedad? Interprete</h3>
+      <p>Medidas Descriptivas de la Humedad:</p>
+      <ul>
+        <li>Alto: 94%</li>
+        <li>Promedio: 80%</li>
+        <li>Bajo: 47%</li>
+      </ul>
+      <p>La humedad promedio es alta, lo que indica una semana relativamente húmeda.</p>
+      <h3>9. ¿Cuáles son las medidas descriptivas de la variable Temperatura? Interprete</h3>
+      <p>Medidas Descriptivas de la Temperatura:</p>
+      <ul>
+        <li>Alto: 66.9°F</li>
+        <li>Promedio: 53.5°F</li>
+        <li>Bajo: 43.9°F</li>
+      </ul>
+      <p>La temperatura promedio sugiere condiciones templadas durante la semana.</p>
+      <h3>10. ¿Existe una relación entre la variable Temperatura y Presión?</h3>
+      <p>No existe una relación entre las condiciones de temperatura y presión ya que la presión se mantiene constante durante la semana mientras que la temperatura posee diversas variaciones.</p>
+    </div>
+  </div>
+  
+
+  <section class="question-section" aria-labelledby="questions-label">
+    <div class="container">
+      <h2 class="headline headline-2 section-title" id="questions-label">Preguntas sobre Cambio Climático</h2>
+  
+      <div class="question">
+        <p>¿Cómo varían las temperaturas anuales por región?</p>
+        <button class="question-button" onclick="toggleAnswer('answer1')">+</button>
+        <div id="answer1" class="answer">
+          <p>Las temperaturas anuales varían significativamente por región debido a factores como la latitud, altitud, y la proximidad al océano. En general, las regiones cercanas al ecuador tienden a ser + cálidas, mientras que las regiones polares son mucho + frías.</p>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>¿Cómo se correlacionan precipitaciones con fenómenos globales?</p>
+        <button class="question-button" onclick="toggleAnswer('answer2')">+</button>
+        <div id="answer2" class="answer">
+          <p>Las precipitaciones están estrechamente correlacionadas con fenómenos globales como El Niño y La Niña, que afectan los patrones climáticos en todo el mundo. Estos fenómenos pueden causar sequías en algunas áreas y lluvias intensas en otras.</p>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>¿Efectos del cambio climático en temperaturas y precipitaciones?</p>
+        <button class="question-button" onclick="toggleAnswer('answer3')">+</button>
+        <div id="answer3" class="answer">
+          <p>El cambio climático está provocando un aumento en las temperaturas globales y alterando los patrones de precipitación. Algunas regiones están experimentando lluvias + intensas y frecuentes, mientras que otras están viendo una disminución en las precipitaciones, lo que lleva a sequías.</p>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>¿Patrones estacionales en diferentes áreas?</p>
+        <button class="question-button" onclick="toggleAnswer('answer4')">+</button>
+        <div id="answer4" class="answer">
+          <p>Los patrones estacionales varían considerablemente entre diferentes áreas. En general, las áreas templadas experimentan cuatro estaciones distintas, mientras que las áreas tropicales pueden tener estaciones húmedas y secas. El cambio climático también está alterando estos patrones, haciendo que las estaciones sean menos predecibles.</p>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>¿Frecuencia y cambios en eventos climáticos extremos?</p>
+        <button class="question-button" onclick="toggleAnswer('answer5')">+</button>
+        <div id="answer5" class="answer">
+          <p>La frecuencia y la intensidad de los eventos climáticos extremos, como huracanes, olas de calor e inundaciones, están aumentando debido al cambio climático. Estos eventos tienen impactos significativos en las comunidades y los ecosistemas.</p>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p>¿Impacto de microclimas locales?</p>
+        <button class="question-button" onclick="toggleAnswer('answer6')">+</button>
+        <div id="answer6" class="answer">
+          <p>Los microclimas locales, influenciados por factores como la vegetación, la topografía y la urbanización, pueden tener un impacto significativo en las condiciones climáticas locales. Estos microclimas pueden diferir significativamente del clima regional general.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="contact">
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              YariCachiguango </a>
+
+            <p class="footer-text">
+              Hola, soy Yari. Cree esta pagina web con fines educativos pero adicional a eso
+              podras encontrar al lado derecho de este mensaje una seccion donde puedes escribirme
+              y realizarme cualquier pregunta acerca del tema expuesto en esta web. 
+            </p>
+
+            <p class="footer-list-title">Direccion</p>
+
+            <address class="footer-text address">
+              Ecuador-Quito <br>
+              Estudiante de la EPN
+            </address>
+
+          </div>
+
+
+          <div class="footer-list2">
+            <p class="footer-list-title">Escríbeme es Gratis!</p>
+            <p class="footer-text">Estaré encantado de resolver tus dudas</p>
+          
+            <div class="input-wrapper">
+              <input type="text" id="nombre" placeholder="Tu nombre" required class="input-field" autocomplete="off">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+          
+            <div class="input-wrapper">
+              <input type="text" id="pregunta" placeholder="Tu Pregunta" required class="input-field" autocomplete="off">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+          
+            <button class="btn btn-primary" id="sendWhatsapp" onclick="enviarWhatsapp()">
+              <p class="span" style="font-size: 20px;">Enviar</p>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          
+          
+
+        <div class="footer-bottom">
+
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#ad" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#ad" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#ad" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
